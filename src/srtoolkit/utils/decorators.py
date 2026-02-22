@@ -3,7 +3,7 @@ import time
 from typing import Callable, Any
 
 def timeit(func: Callable) -> Callable:
-    """Simple timing decorator"""
+    """timing decorator"""
     @wraps(func)
     def wrapper(*args, **kwargs):
         t0 = time.time()
@@ -14,7 +14,7 @@ def timeit(func: Callable) -> Callable:
     return wrapper
 
 def cached(maxsize: int = 128):
-    """Return an lru_cache-based decorator for instance-less functions (or classmethod)"""
+    """lru_cache-based decorator for instance-less functions (or classmethod)"""
     def deco(func: Callable) -> Callable:
         cache = lru_cache(maxsize=maxsize)(func)
         @wraps(func)
