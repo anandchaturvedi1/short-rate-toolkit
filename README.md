@@ -3,7 +3,7 @@
 A concise Python library implementing classic short-rate models for fixed income analytics.  
 
 ## Features
-- **Model classes**: Vasicek, CIR, Ho–Lee, Hull–White, with analytic zero-coupon bond pricing where available  
+- Model classes include Vasicek, CIR, Ho-Lee, and Hull-White, with analytic zero-coupon bond pricing applied wherever available. 
 - **Monte Carlo engine**: Parallel path generation for efficient simulations  
 - **Utilities**: Timing and memoization decorators for performance  
 - **Examples & tests**: Ready-to-run demos for validation  
